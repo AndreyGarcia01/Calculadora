@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora N3 </title>
+</head>
+<body>
+    <script src="js.js"></script>
+
+    <p>Calculadora N3 </p>
+    
+    <select id="select" onchange="optype()">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="">*</option>
+        <option value="/">/</option>
+    </select>
+    <br>
+    <br>
+    <p> Primeiro Número </p>
+    <input type="number" id="input1">
+    <p id="sinal">+</p>
+    <p> Segundo Número </p>
+    <input type="number" id="input2">
+    <br>
+    <br>
+    <button onclick="input()">CALCULAR</button>
+    <br>
+    <p id="resultado">Resultado é = </p>
+
+    
+</body>
+</html>

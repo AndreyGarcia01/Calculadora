@@ -56,15 +56,24 @@ function multiplicacao(n1, n2){
 }
 
 //funcao de DIVISAO que vai dividir N1/N2, colocar o resultado na variavel resp e executar a funcao output()
-function divisao(n1, n2){
-     let resp = n1 / n2;
-    output(resp);  
-}
+function divisao(n1, n2){  
+    if(n2!=0){
+    resp = n1/n2;
+    output(resp);
+    }
+     resp = "Não é possivel dividir por 0";
+     output(resp) ;
+    }
+    
+   
+
+  
 
 //funcao OUTPUT, que vai exibir o resultado pro usuario
 function output(resp){
-
    console.log(resp);
+
+
 
    //imprimir a string "Resultado = " e tambem o valor de resp, a variavel que contem o resultado da operacao. o sinal de + significa que ele vai imprimir os dois juntos, um depois do outro
    document.getElementById("resultado").innerHTML = 'Resultado = ' + resp;
